@@ -86,7 +86,7 @@ int main() {
 	struct Graph* graph = createGraph(vertices);
 	int src, dest, weight;
 	while (fscanf(file, "%d %d %d", &src, &dest, &weight) != EOF) {
-		addEdge(graph, src - 1, dest - 1, weight); // Remove the -1 adjustment here
+		addEdge(graph, src , dest , weight); // Remove the -1 adjustment here
 	}
 	fclose(file);
 	primMST(graph);
